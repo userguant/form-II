@@ -1,26 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research Terminal</title>
-<link rel="stylesheet" href="css/main.css">
-</head>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Research Terminal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
 
-<body>
+  <body>
 
-<div id="terminal">
-  <div id="output">
-    <p>OCAD Research System v1.0</p>
-    <p>Type "help" to begin</p>
-  </div>
+    <!-- 🔥 TERMINAL INPUT（核心 interaction） -->
+    <div id="terminal">
+      <p>OCAD Research System v1.0</p>
+      <p>Type "help" to begin</p>
 
-  <div id="input-line">
-    <span>&gt;</span>
-    <input type="text" id="input" autofocus />
-  </div>
-</div>
+      <div id="input-line">
+        <span>&gt;</span>
+        <input type="text" id="input" autofocus placeholder="type here...">
+      </div>
+    </div>
 
-<script src="js/script.js"></script>
-</body>
+
+    <!-- 原本内容（先隐藏，等输入触发） -->
+    <div id="content" style="display:none;">
+
+      <div id="titles">
+        <h1>Research Talks: Vanessa Dion Fletcher, Kelsey Pugh & Anna Stielau</h1>
+        <h2>Faculty of Arts and Science faculty members Vanessa Dion Fletcher, Kelsey Pugh, and Anna Stielau discuss their current research and creative practices.</h2>
+        <div class="date">March 24th, 2026</div> 
+        <div class="time">3:30 - 4:30pm</div>
+        <div class="location">100 McCaul st, Toronto</div>
+        <div class="room">Room 543</div>
+      </div>
+
+      <div id="speakers">
+
+        <section class="event" id="vanessa-dion-fletcher">
+          <h3>Vanessa Dion Fletcher</h3>
+          <div class="info">
+            <h4>Bio</h4>
+            <p>Vanessa Dion Fletcher is a Lenape and Potawatomi neurodiverse Artist...</p>
+            <h4>Talk: BIG Doll || Xwat Naaniitus</h4>
+            <p>BIG Doll || Xwat Naaniitus is an exhibition that shows the process...</p>
+          </div>
+        </section>
+
+        <section class="event" id="kelsey-pugh">
+          <h3>Kelsey Pugh</h3>
+          <div class="info">
+            <h4>Bio</h4>
+            <p>Kelsey Pugh is a paleoanthropologist studying ape and human evolution...</p>
+            <h4>Talk: Reconstructing Ancient Faces</h4>
+            <p>Relatively complete fossils of hominoids are rare discoveries...</p>
+          </div>
+        </section>
+
+        <section class="event" id="anna-stielau">
+          <h3>Anna Stielau</h3>
+          <div class="info">
+            <h4>Bio</h4>
+            <p>Anna Stielau is an assistant professor of art history and visual culture...</p>
+            <h4>Talk: Arts of Darkness</h4>
+            <p>Photography is an infrastructural art. It needs light, power, and water...</p>
+          </div>
+        </section>
+
+      </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+  </body>
 </html>
