@@ -1,1 +1,108 @@
+/* reset（你原本的） */
+* {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
 
+/* 整体风格 */
+body {
+    background: black;
+    color: #00ff88;
+    font-family: monospace;
+    padding: 20px;
+}
+
+/* 🔥 TERMINAL 区域 */
+#terminal {
+    margin-bottom: 40px;
+}
+
+#terminal p {
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/* 输入行 */
+#input-line {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#input-line span {
+    margin-right: 10px;
+}
+
+#input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #00ff88;
+    font-family: monospace;
+    font-size: 16px;
+    width: 100%;
+}
+
+/* 🔒 内容区域（之后JS控制显示） */
+#content {
+    margin-top: 40px;
+}
+
+/* 标题区 */
+#titles {
+    margin-bottom: 40px;
+}
+
+#titles h1 {
+    font-size: 28px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+#titles h2 {
+    font-size: 16px;
+    opacity: 0.7;
+    margin-bottom: 20px;
+}
+
+/* 信息行 */
+.date, .time, .location, .room {
+    font-size: 14px;
+    opacity: 0.6;
+    margin-bottom: 5px;
+}
+
+/* speaker 区 */
+.event {
+    margin-bottom: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #00ff88;
+}
+
+/* 名字 */
+.event h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* 小标题 */
+.info h4 {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    opacity: 0.8;
+}
+
+/* 内容 */
+.info p {
+    font-size: 14px;
+    line-height: 1.6;
+    opacity: 0.7;
+}
+
+/* 🔥 hover加一点设计感 */
+.event:hover {
+    background: rgba(0,255,136,0.05);
+    transition: 0.3s;
+}
